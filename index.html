@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment17</title>
+  </head>
+  <body> 
+      <h3> Ctrl + Shift + i 
+          <br/>Open in Console
+      </h3>                         
+    <script>
+        var num= prompt("enter number to print left pascal's pattern");
+        var star= "";
+        for(var i=1; i<=num; i++){
+            for(var j=0; j<i; j++){
+                star += " *"
+            }
+            star+= "\n";
+        }
+        for(var i=1; i<=num-1; i++){
+            for(var j=0; j<num-i; j++){
+                star += " *"
+            }
+            star+= "\n";
+        }
+
+        console.log(star);
+
+    </script>
+  </body>
+</html>
